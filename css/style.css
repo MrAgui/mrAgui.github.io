@@ -113,6 +113,10 @@ header .navbar a:hover{
         width: 100%;
         left: -120%;
     }
+    /* MAKE sure theres no space in order for this to work */
+    header.active{
+        left: 0%;
+    }
     #menu-bars{
         display: initial;
     }
