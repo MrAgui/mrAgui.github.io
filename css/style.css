@@ -39,18 +39,43 @@ body{
 header{
     position: fixed;
     top:0; right:0;
+    /* top:0; */
     min-height: 100vh;
     display: inline-flex;
     align-items:center;
     justify-content: center;
-    background: #eee;
+    background: rgb(34, 33, 33);
     z-index: 1000;
     flex-flow: column;
-    padding: 8rem 2rem;
+    /* padding: 8rem 2rem; */
+}
+
+header .logo{
+    text-transform: uppercase;
+    color: var(--orange);
+    font-size: 3rem;
+    font-weight: bolder;
+}
+header .logo span{
+    text-transform: uppercase;
+    color: #fff ;
 }
 
 header .navbar{
-    writing-mode: horizontal-tb;
-    /* writing-mode: vertical-lr; */
-    padding:1.5rem;
+    /* controls the navbar text orientation*/
+    /* writing-mode: horizontal-tb; */
+    writing-mode: vertical-lr;
+    /* text-align: center; */
+    padding: 1.5rem;
+}
+
+header .navbar a{
+    /* text-align: center; */
+    
+    /* Controls the orientation of the text in navbar */
+    /* display: block; */
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: #fff;
+    margin: 2rem 0;
 }
