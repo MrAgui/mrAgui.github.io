@@ -51,6 +51,8 @@ header{
 }
 
 header .logo{
+    /* position: fixed;
+    top: 5rem; right: 1rem; */
     text-transform: uppercase;
     color: var(--orange);
     font-size: 3rem;
@@ -70,7 +72,7 @@ header .navbar{
 }
 
 header .navbar a{
-    /* text-align: center; */
+    text-align: center;
     
     /* Controls the orientation of the text in navbar */
     /* display: block; */
@@ -82,4 +84,51 @@ header .navbar a{
 
 header .navbar a:hover{
     color: var(--orange);
+}
+
+#menu-bars{
+    position: fixed;
+    z-index: 10000;
+    top:1rem; left: 1rem;
+    padding:1rem 1.5rem;
+    border-radius: .5rem;
+    color: #fff;
+    background: var(--orange);
+    cursor: pointer;
+    font-size: 2rem;
+    display: none;
+}
+
+/* Media queries for screen responsiveness */
+
+@media (max-width:991px){
+    html{
+        font-size: 62.5%;
+    }
+    body{
+        padding-right: 0;
+
+    }
+    header{
+        width: 100%;
+        left: -120%;
+    }
+    #menu-bars{
+        display: initial;
+    }
+    header .navbar{
+       writing-mode: horizontal-tb;
+    }
+    header .navbar a{
+        display: block;
+        font-size: 3rm;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+
+    
 }
