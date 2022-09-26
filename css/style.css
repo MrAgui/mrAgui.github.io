@@ -144,6 +144,18 @@ section{
     padding: 2rem 9%;
     min-height: 100vh;
 }
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.heading span{
+    text-transform: uppercase;
+    color: var(--orange);
+}
 
 .btn{
     display: inline-block;
