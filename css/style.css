@@ -136,3 +136,69 @@ header .navbar a:hover{
 
     
 }
+
+section{
+    padding: 2rem 9%;
+    min-height: 100vh;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.home .content{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.home .content img{
+    width:25em; 
+    height:25em;
+    border-radius: 50%;
+    object-fit: cover;
+    border:.5rem solid var(--orange);
+}
+/* This is for the hover effect in the image */
+/* .home .content.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .home .contentr:hover .overlay {
+    opacity: 1;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  } */
+  
+.home .content h3{
+    font-size: 4rem;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.home .content h3 span{
+    font-size: 4rem;
+    color:#ffa31a;
+    text-transform: uppercase;
+}
+

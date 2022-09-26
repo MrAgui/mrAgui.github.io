@@ -32,12 +32,17 @@
 
 <section class="home" id="home"> 
     <div class ="content" >
-        <img src="images/Circle-karl.png" alt="">
-        <h3>Karl <span>Aguilar</span> </h3>
+        <img src="images/karl.jpg" alt="" >
+
+            <!-- <div class="overlay">
+                <div class="text">Hello World</div>
+            </div> -->
+        
+            <h3>Karl <span>Aguilar</span> </h3>
         <p>
             I am a <span class="typing-text"> front-end developer </span>
         </p>
-        <a href ="#about" class=""btn>ABOUT ME </a>
+        <!-- <a href ="#about" class=""btn>ABOUT ME </a> -->
     </div>
 
     
@@ -49,6 +54,10 @@
 
 
 <!-- javascripts -->
+
+<!-- Type.js link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
 <script>
     let menu = document.querySelector('#menu-bars');
     let header = document.querySelector('header');
@@ -63,8 +72,13 @@
         header.classList.remove('active');
     }
 
-
+var typed = new Typed('.typing-text', {
+    strings : ['front-end developer', 'future server side developer', 'certified AWS cloud practitioner', 'aspiring cloud engineer', 'TECHNOPHILE'],
+    loop : true,
+    typeSpeed : 150
+})
 </script>
+
 
 </body>
 
