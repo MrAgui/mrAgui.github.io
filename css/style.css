@@ -2,6 +2,7 @@
 :root{
     --orange: #ffa31a;
     --gray: #212122;
+    --white: #ffffff;
 }
 
 *{
@@ -18,27 +19,40 @@ html{
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    direction: ltr;
 }
 
+/* html.Flipped{
+    direction: rtl;
+} */
 html::-webkit-scrollbar{
+    background-color: #ffa31a;
     width:.7rm;
 }
 
 html::-webkit-scrollbar-track{
-    /* background:#fff; */
-    background: var(--orange);
+    
+    background:var(--gray);
+    /* background: var(--orange); */
 }
 
 html::-webkit-scrollbar-thumb{
     background: var(--orange);
+    /* background: #555; */
 }
 
 body{
-    background: #000;;
+    background: #000;
     padding-right: 5rem;
+    
 }
 /* Nav bar */
 header{
+    
+    /* How to move the scrollbar to the left side */
+    /* overflow-y: auto; */
+
+
     position: fixed;
     top:0; left:0;
     /* top:0; */
@@ -49,6 +63,7 @@ header{
     background: var(--gray);
     z-index: 1000;
     flex-flow: column;
+
     /* padding: 8rem 2rem; */
 }
 
@@ -71,6 +86,7 @@ header .navbar{
     writing-mode: vertical-lr;
     /* text-align: center; */
     padding: 1.5rem;
+    direction: ltr;
 }
 
 header .navbar a{
@@ -101,53 +117,14 @@ header .navbar a:hover{
     cursor: pointer;
     font-size: 2rem;
     display: none;
-}
-
-/* Media queries for screen responsiveness */
-
-@media (max-width:991px){
-    html{
-        font-size: 62.5%;
-    }
-    body{
-        padding-right: 0;
-
-    }
-    header{
-        width: 100%;
-        /* right: -120%; */
-        left: -120%;
-    }
-    /* MAKE sure theres no space in order for this to work */
-    header.active{
-        left: 0%;
-    }
-    #menu-bars{
-        display: initial;
-    }
-    header .navbar{
-       writing-mode: horizontal-tb;
-    }
-    header .navbar a{
-        display: block;
-        font-size: 3rm;
-    }
-}
-
-@media (max-width:450px){
-    html{
-        font-size: 50%;
-    }
-
-    .heading{
-        font-size: 10rem;
-    }
+    direction: ltr;
 }
 
 section{
     padding: 2rem 9%;
     min-height: 100vh;
 }
+/* ABOUT ME */
 .heading{
     text-align: center;
     padding-bottom: 2rem;
@@ -160,6 +137,49 @@ section{
     text-transform: uppercase;
     color: var(--orange);
 }
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+}
+
+.about .row .image{
+    text-align: center;
+    flex: 1 1 25rem;
+}
+
+.about .row .image img{
+    width: 30rem;
+    border-radius: rem;
+    border: 1rem solid var(--white);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 1);
+}
+
+.about .row .content{
+    flex:1 1 55rem;
+    text-transform: uppercase;
+    color: var(--white);
+
+}
+/* My name is Karl Joseph Aguilar */
+.about .row .content h3{
+    color:var(--white);
+    font-size: 4rem;
+}
+
+.about .row .content h3 span{
+    color:var(--orange);
+    font-size: 4rem;
+}
+
+.about .row .content .info{
+    color:var(--white);
+    font-size: 2rem;
+}
+
+
+
 
 .btn{
     display: inline-block;
@@ -186,13 +206,15 @@ section{
 }
 
 .home #particles-js{
+    background-attachment: fixed;
     position: absolute;
     top: 0; ;left: 0;
     height: 100%;
     width: 100%;
 }
 
-.home #particles-js{
+.home::before{
+    background-attachment: fixed;
     content: '';
     position: absolute;
     top: 0; ;left: 0;
@@ -236,3 +258,44 @@ section{
     color: #fff;
 }
 
+
+/* Media queries for screen responsiveness */
+
+@media (max-width:991px){
+    html{
+        font-size: 62.5%;
+    }
+    body{
+        padding-right: 0;
+
+    }
+    header{
+        width: 100%;
+        /* right: -120%; */
+        left: -120%;
+    }
+    /* MAKE sure theres no space in order for this to work */
+    header.active{
+        left: 0%;
+    }
+    #menu-bars{
+        display: initial;
+    }
+    header .navbar{
+       writing-mode: horizontal-tb;
+    }
+    header .navbar a{
+        display: block;
+        font-size: 3rm;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 4rem;
+    }
+}
