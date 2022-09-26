@@ -148,7 +148,20 @@ section{
     justify-content: center;
     position: relative;
 }
+.home #particles-js{
+    position: absolute;
+    top: 0; left:0;
+    height:100%;
+    width:100%;
+}
 
+.home::before{
+    content: '';
+    position: absolute;
+    top: 0; left:0;
+    height:100%;
+    width:100%;
+}
 .home .content{
     text-align: center;
     position: relative;
