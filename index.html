@@ -10,22 +10,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
     <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
 </head>
 <body>
 <!-- header start -->
     
     <header>
-        <!-- <div id="bg" class="bg-image" style="background-image: url(images/eat_sleep_code_repeat.jpg)"> -->
+       
         </div>
         
-            <div id="menu-bars" class="fas fa-bars"></div>
+
+
+
+        <div id="menu-bars" class="fas fa-bars"></div>
 
 
         <a href="#" class="logo"><span>K</span>A</a>
-
         <nav class="navbar">
             <a href="#home">HOME</a>
-            <a href="#aboutMe">ABOUT</a>
+            <a href="#about">ABOUT</a>
             <a href="#resume">RESUME</a>
             <a href="#contactMe">CONTACT</a>
         </nav>
@@ -35,16 +40,22 @@
 
 <!-- HOME SECTION START -->
 
-<section class="home" id="home"> 
+<!-- <section class="home" id="home" style="background-image: url(images/cat.jpg);"> -->
+<section class="home" id="home">
+    
     <div id="particles-js"></div>
     <div class ="content" >
         <!-- <img src="images/Circle-karl.png" alt="" > -->
+        
             <h2>  HELLO WORLD,  I'AM </h2>
             <!-- <h2> I'AM </h2> -->
             <h3>Karl JOSEPH <span>Aguilar</span> </h3>
         <p>
            A <span class="typing-text"> </span>
         </p>
+        <br>
+        <br/>
+        <a href="#about" class="btn">about me </a>
     </div>
 </section>
 
@@ -57,9 +68,9 @@
 
 <!-- Type.js link -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-<!-- Particle.js link -->
-<!-- <script src="js/particles.min.js"></script> -->
-<!-- <script src="js/app.js"></script> -->
+<!-- particles.js link -->
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
 
 <script>
     let menu = document.querySelector('#menu-bars');
@@ -76,7 +87,7 @@
     }
 
 var typed = new Typed('.typing-text', {
-    strings : [' ', 'COFFEE LOVER. <3', '<strong>AWS</strong> CERTIFIED CLOUD PRACTITIONER.', 'ASPIRING CLOUD ENGINEER.'],
+    strings : ['Com Sci Major', 'COFFEE LOVER. <3', '<strong>AWS</strong> CERTIFIED CLOUD PRACTITIONER.', 'ASPIRING CLOUD ENGINEER.'],
     loop : true,
     typeSpeed : 100,
     backSpeed : 10

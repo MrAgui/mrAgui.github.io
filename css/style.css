@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 :root{
     --orange: #ffa31a;
+    --gray: #212122;
 }
 
 *{
@@ -32,11 +33,10 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background-image: url("/images/eat_sleep_code_repeat.jpg");
-    /* background:#000000; */
+    background: #000;;
     padding-right: 5rem;
 }
-
+/* Nav bar */
 header{
     position: fixed;
     top:0; right:0;
@@ -45,7 +45,7 @@ header{
     display: inline-flex;
     align-items:center;
     justify-content: center;
-    background: rgb(34, 33, 33);
+    background: var(--gray);
     z-index: 1000;
     flex-flow: column;
     /* padding: 8rem 2rem; */
@@ -145,66 +145,59 @@ section{
     min-height: 100vh;
 }
 
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    background: var(--gray);
+    color: #fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.btn:hover{
+    background-color:var(--orange);
+    letter-spacing: .2rem;
+}
+
 .home{
+    
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
+
 .home #particles-js{
     position: absolute;
-    top: 0; left:0;
-    height:100%;
-    width:100%;
+    top: 0; ;left: 0;
+    height: 100%;
+    width: 100%;
 }
 
-.home::before{
+.home #particles-js{
     content: '';
     position: absolute;
-    top: 0; left:0;
-    height:100%;
-    width:100%;
+    top: 0; ;left: 0;
+    height: 100%;
+    width: 100%;
 }
+
 .home .content{
     text-align: center;
     position: relative;
     z-index: 1;
 }
 
-.home .content img{
+/* .home .content img{
     width:25em; 
     height:25em;
     border-radius: 50%;
     object-fit: cover;
     border:.5rem solid var(--orange);
-}
-/* This is for the hover effect in the image */
-/* .home .content.overlay{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-  }
-  
-  .home .contentr:hover .overlay {
-    opacity: 1;
-  }
+} */
 
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  } */
 .home .content h2{
     /* font-size: 4rem; */
     color:#fff;
