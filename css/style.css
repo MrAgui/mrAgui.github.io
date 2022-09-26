@@ -25,7 +25,8 @@ html::-webkit-scrollbar{
 }
 
 html::-webkit-scrollbar-track{
-    background:#fff;
+    /* background:#fff; */
+    background: var(--orange);
 }
 
 html::-webkit-scrollbar-thumb{
@@ -39,7 +40,7 @@ body{
 /* Nav bar */
 header{
     position: fixed;
-    top:0; right:0;
+    top:0; left:0;
     /* top:0; */
     min-height: 100vh;
     display: inline-flex;
@@ -92,7 +93,7 @@ header .navbar a:hover{
 #menu-bars{
     position: fixed;
     z-index: 10000;
-    top:1rem; left: 1rem;
+    top:1rem; right: 1rem;
     padding:1rem 1.5rem;
     border-radius: .5rem;
     color: #fff;
@@ -114,6 +115,7 @@ header .navbar a:hover{
     }
     header{
         width: 100%;
+        /* right: -120%; */
         left: -120%;
     }
     /* MAKE sure theres no space in order for this to work */
@@ -137,7 +139,9 @@ header .navbar a:hover{
         font-size: 50%;
     }
 
-    
+    .heading{
+        font-size: 10rem;
+    }
 }
 
 section{
