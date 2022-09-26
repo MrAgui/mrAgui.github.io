@@ -28,6 +28,25 @@
     </header>
 <!-- header end -->
 
+<!-- HOME SECTION START -->
+
+<section class="home" id="home"> 
+    <div class ="content" >
+        <img src="images/Circle-karl.png" alt="">
+        <h3>Karl <span>Aguilar</span> </h3>
+        <p>
+            I am a <span class="typing-text"> front-end developer </span>
+        </p>
+        <a href ="#about" class=""btn>ABOUT ME </a>
+    </div>
+
+    
+</section>
+
+
+
+<!-- HOME SECTION END -->
+
 
 <!-- javascripts -->
 <script>
@@ -37,6 +56,11 @@
     menu.onclick = () =>{
         menu.classList.toggle('fa-times');
         header.classList.toggle('active');
+    }
+
+    window.onscroll= () =>{
+        menu.classList.remove('fa-times');
+        header.classList.remove('active');
     }
 
 
