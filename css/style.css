@@ -32,7 +32,8 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background:#eee;
+    background-image: url("/images/eat_sleep_code_repeat.jpg");
+    /* background:#000000; */
     padding-right: 5rem;
 }
 
@@ -76,8 +77,10 @@ header .navbar a{
     
     /* Controls the orientation of the text in navbar */
     /* display: block; */
-    padding: 1.5rem;
-    font-size: 2rem;
+    text-orientation: upright;
+    /* padding: 1.5rem; */
+    padding: .5rem;
+    font-size: 1.3rem;
     color: #fff;
     margin: 2rem 0;
 }
@@ -202,7 +205,11 @@ section{
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
   } */
-  
+.home .content h2{
+    /* font-size: 4rem; */
+    color:#fff;
+    text-transform: uppercase;
+}
 .home .content h3{
     font-size: 4rem;
     color:#fff;
@@ -213,5 +220,10 @@ section{
     font-size: 4rem;
     color:#ffa31a;
     text-transform: uppercase;
+}
+
+.home .content p{
+    font-size: 3rem;
+    color: #fff;
 }
 
