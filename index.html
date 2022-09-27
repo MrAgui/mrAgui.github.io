@@ -9,10 +9,10 @@
     <link href="images/KA.png" rel="icon">
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
-    <link rel="stylesheet" href="css/style.css">
     <!-- font awsone kit for icons -->
     <script src="https://kit.fontawesome.com/363392db05.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
 </head>
@@ -68,20 +68,11 @@
         </div>
 
         <div class="content">
-            <!-- <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br> -->
+    
             <h3> my name is <span> KARL JOSEPH AGUILAR</span> </h3>
-            <p class="info">Hello I'm a Computer Science student with the interest in the field of cloud computing, building business and e-commerce..
-                I love cat and dogs, Animals in general. Kaya kung mahal kita alam mo na hEHE.
+            <p class="info">I'm a Computer Science student with the interest in the field of cloud computing, building business and e-commerce..
+                I love cat and dogs, Animals in general.
                 If you want to know more about me, feel free to download my cV or <a href ="#contact"> contact me</a>
-                
             <div class="box-container">
                 <div class="box">
                     <p><span> age: </span> 22 </p>
@@ -96,8 +87,11 @@
                     <p><span> address: </span> Silicon Valley, Philippines </p>
                 </div>
             </div>
-            <!-- Button to download my CV can be move to contact page -->
-            <!-- <a href="files/AguilarResume.pdf" target="_blank" class="btn"> download cV</a> -->
+            <br>
+            <br>
+            <a href="files/AguilarResume.pdf" target="_blank" class="btn btn2"> download cV</a>
+            <br>
+            <br>
         </div>
     </div>
 
@@ -146,11 +140,16 @@
 <section class="contact" id="contact">
     <div id="contact">
         <div class="container">
+            <h1 class="heading">Contact <span>Me</span></h1>
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="heading">Contact <span>Me</span></h1>
-                    <p>sample@sample.com</p>
-                    <p>+63987654321</p>
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" rows="6" placeholder="Message"></textarea>  
+                    </form>
+                    <button type="submit" class="btn btn2"> Submit </button>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/BSU.Profile" target="_blank"> <i class="fab fa-facebook"></i></a>
                         <a href="https://twitter.com/Yagi_Agui" target="_blank"> <i class="fab fa-twitter-square"></i></a>
@@ -159,12 +158,14 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"> </textarea>
-                        <button type="submit"> Submit </button>
-                    </form>
+                    <br>
+                    <!-- <p><i class="fa-light fa-envelope"></i> contact@sample.com</p>
+                    <p><i class="fa-regular fa-phone"></i> +63987654321</p> -->
+                    <p>contact@sample.com</p>
+                    <p></i> +63987654321</p>
+                    <div class="message">
+                        <!-- <p> No back end yet, messages won't be received.</p> -->
+                    </div>
                 </div>
             </div>
         </div>

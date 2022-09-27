@@ -152,8 +152,8 @@ section{
     font-size: 6rem;
     text-transform: uppercase;
     color: #fff;
-    padding-top: 5%;
-    padding-bottom: 10%;
+    padding-top: 3%;
+    padding-bottom: 5%;
 }
 
 .heading span{
@@ -330,13 +330,89 @@ section{
 
 /* Contacts */
 
-.contact-left p{
-    font-size: 3rem;
-    color:var(--white);
-    text-transform: uppercase;
+.contact .container .row{
+    /* text-align: center; */
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding:1rem 0;
+    padding-right: 100rem 0;
+}
+
+/* End of testing area */
+.contact .row .content .box-container .box{
+    flex:1 1 20rem;
 }
 
 
+.contact-left a{
+    
+    padding-top: 10px;
+}
+.contact-left p{
+    flex-basis: 35%;
+    font-size: 3rem;
+    color:var(--white);
+    text-transform: uppercase;
+    
+}
+
+.contact-left p i{
+ 
+    color:var(--white);
+    margin-right: 15px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: var(--white);
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: var(--orange);
+    transform: translateY(-5px);
+}
+
+.btn .btn2{
+    display: inline-block;    
+    
+}
+
+
+.contact-right p{
+    right: 100%;
+    flex-basis: 35%;
+    font-size: 3rem;
+    color:var(--white);
+    text-transform: uppercase;
+    padding-left: 50px;
+}
+
+.contact-right form{
+    
+    width: 100%
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin:15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    text-transform:none;
+}
 
 
 
