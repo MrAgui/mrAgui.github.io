@@ -63,6 +63,7 @@ header{
     background: var(--gray);
     z-index: 1000;
     flex-flow: column;
+ 
 
     /* padding: 8rem 2rem; */
 }
@@ -151,6 +152,8 @@ section{
     font-size: 6rem;
     text-transform: uppercase;
     color: #fff;
+    padding-top: 5%;
+    padding-bottom: 10%;
 }
 
 .heading span{
@@ -212,10 +215,10 @@ section{
     flex:1 1 20rem;
 }
 .about .row .content .box-container .box p{
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     color:var(--white);
-    padding: 3rem 0;
-    line-height: 2;
+    padding: 2rem 0;
+    line-height: 1;
 }
 
 .btn{
@@ -296,11 +299,13 @@ section{
 }
 
 
-/* POTFOLIO */
+/* SERVICES */
 
-#services{
-    padding: 30px 0;
-}
+/* #portfolio{
+    padding: 3px 0;
+} */
+
+
 
 .services-list{
     font-size: 3rem;
@@ -313,17 +318,23 @@ section{
 
 .services-list h2{
     font-size: 3rem;
-    color:var(--white);
+    color:var(--orange);
     text-transform: uppercase;
 }
 
 .services-list p{
     font-size: 3rem;
-    color:#ffa31a;
+    color:var(--white);
     text-transform: uppercase;
 }
 
+/* Contacts */
 
+.contact-left p{
+    font-size: 3rem;
+    color:var(--white);
+    text-transform: uppercase;
+}
 
 
 
@@ -337,15 +348,23 @@ section{
 
 @media (max-width:991px){
     html{
-        /* font-size: 62.5%; */
+        font-size: 62.5%;
 
-        font-size:80%;
+        /* font-size:80%; */
     }
     body{
         padding-right: 0;
 
     }
+
+    /* Fix the nav bar as it eats the whole screen when viewing in mobile screen */
+
     header{
+        /* top:0;
+        right: 0;
+        width:200px;
+        height:100vh;
+        padding-top: 50px; */
         width: 100%;
         /* right: -120%; */
         left: -120%;
@@ -370,11 +389,11 @@ section{
 
 @media (max-width:450px){
     html{
-        font-size: 70%;
+        font-size: 20%;
     }
 
     .heading{
-        font-size: 8rem;
+        font-size: 4rem;
     }
 
 }
