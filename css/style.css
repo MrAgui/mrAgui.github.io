@@ -97,20 +97,34 @@ header .navbar{
 
 header .navbar a{
     text-align: center;
-    
     /* Controls the orientation of the text in navbar */
     /* display: block; */
-    text-orientation: upright;
     /* padding: 1.5rem; */
+    text-orientation: upright;
     padding: .5rem;
     font-size: 1.3rem;
     color: #fff;
     margin: 2rem 0;
 }
+/* 
+header .navbar a::after{
+    content: '';
+    width:0 ;
+    height: 3px;
+    background: var(--orange);
+    position: absolute;
+    left:0;
+    right: 6px;
+    transition:0.5s;
+} */
+
+
 
 header .navbar a:hover{
+    /* width: 100%; */
     color: var(--orange);
 }
+
 
 #menu-bars{
     position: fixed;
@@ -198,15 +212,11 @@ section{
     flex:1 1 20rem;
 }
 .about .row .content .box-container .box p{
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     color:var(--white);
     padding: 3rem 0;
     line-height: 2;
 }
-
-
-
-
 
 .btn{
     display: inline-block;
@@ -264,18 +274,18 @@ section{
 } */
 
 .home .content h2{
-    /* font-size: 4rem; */
+    font-size: 3rem;
     color:#fff;
     text-transform: uppercase;
 }
 .home .content h3{
-    font-size: 4rem;
+    font-size: 6rem;
     color:#fff;
     text-transform: uppercase;
 }
 
 .home .content h3 span{
-    font-size: 4rem;
+    font-size: 6rem;
     color:#ffa31a;
     text-transform: uppercase;
 }
@@ -286,11 +296,50 @@ section{
 }
 
 
+/* POTFOLIO */
+
+#services{
+    padding: 30px 0;
+}
+
+.services-list{
+    font-size: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.services-list h2{
+    font-size: 3rem;
+    color:var(--white);
+    text-transform: uppercase;
+}
+
+.services-list p{
+    font-size: 3rem;
+    color:#ffa31a;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Media queries for screen responsiveness */
 
 @media (max-width:991px){
     html{
-        font-size: 62.5%;
+        /* font-size: 62.5%; */
+
+        font-size:80%;
     }
     body{
         padding-right: 0;
@@ -307,22 +356,25 @@ section{
     }
     #menu-bars{
         display: initial;
+        /* width:  0.5%;
+        height: 0.5%; */
     }
     header .navbar{
        writing-mode: horizontal-tb;
     }
     header .navbar a{
         display: block;
-        font-size: 3rm;
+        font-size: 7rm;
     }
 }
 
 @media (max-width:450px){
     html{
-        font-size: 50%;
+        font-size: 70%;
     }
 
     .heading{
-        font-size: 4rem;
+        font-size: 8rem;
     }
+
 }
