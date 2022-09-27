@@ -26,7 +26,7 @@ html{
     direction: rtl;
 } */
 html::-webkit-scrollbar{
-    background-color: #ffa31a;
+    background-color: var(--orange);
     width:.7rm;
 }
 
@@ -52,7 +52,7 @@ header{
     /* How to move the scrollbar to the left side */
     /* overflow-y: auto; */
 
-
+    /* direction: rtl; */
     position: fixed;
     top:0; left:0;
     /* top:0; */
@@ -83,11 +83,17 @@ header .logo span{
 header .navbar{
     /* controls the navbar text orientation*/
     /* writing-mode: horizontal-tb; */
+    /* direction: rtl; */
     writing-mode: vertical-lr;
     /* text-align: center; */
     padding: 1.5rem;
-    direction: ltr;
+    /* overflow-y: auto;
+    direction: ltr; */
 }
+/* TESTING TO MOVE THE SCROLLBAR TO THE LEFT STIL FAILS */
+/* .Flipped{
+    direction: rtl;
+} */
 
 header .navbar a{
     text-align: center;
