@@ -317,15 +317,22 @@ section{
 }
 
 .services-list h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color:var(--orange);
     text-transform: uppercase;
 }
 
 .services-list p{
-    font-size: 3rem;
+    font-size: 2rem;
     color:var(--white);
     text-transform: uppercase;
+}
+
+.services-list img{
+    width: 250;
+    height: 250px;
+    aspect-ratio: auto 100 / 100;
+    
 }
 
 /* Contacts */
