@@ -370,6 +370,10 @@ section{
     margin-right: 15px;
 }
 
+.contact-left form textarea{
+    resize: none;
+}
+
 .social-icons{
     margin-top: 30px;
 }
