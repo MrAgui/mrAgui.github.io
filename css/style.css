@@ -11,7 +11,8 @@
     box-sizing: border-box;
     outline:none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
+    text-transform:none;
     transition: all .2s linear;
 }
 
@@ -175,8 +176,8 @@ section{
 .about .row .image img{
     width: 30rem;
     border:none;
-    border-radius: rem;
-    border: 1rem solid var(--white);
+    /* border-radius: rem; */
+    /* border: 1rem solid var(--white); */
     /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 1); */
 }
 
@@ -297,6 +298,7 @@ section{
 .home .content p{
     font-size: 3rem;
     color: #fff;
+    
 }
 
 
